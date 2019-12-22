@@ -25,7 +25,7 @@ SECRET_KEY = 'rt=_b%c25^_kmna*j331e7d3oayk&)t9%u@=6m3*3&#&5iw$t!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['techsnippets718.pythonanywhere.com']
+ALLOWED_HOSTS = ['techsnippet.pythonanywhere.com']
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
