@@ -86,10 +86,10 @@ WSGI_APPLICATION = 'TechSnippets.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'techsnippets718$techsnippets',
-        'USER': 'techsnippets718',
-        'PASSWORD': 'hariakil718',
-        'HOST': 'techsnippets718.mysql.pythonanywhere-services.com',   
+        'NAME': 'techsnippet$techsnippets',
+        'USER': 'techsnippet',
+        'PASSWORD': 'akilhari187',
+        'HOST': 'techsnippet.mysql.pythonanywhere-services.com',   
         'PORT': '',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
