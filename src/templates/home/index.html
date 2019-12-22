@@ -1,4 +1,7 @@
+{% extends 'base.html' %}
 {% load static %}
+
+<!--
 <!DOCTYPE html>
 <html lang="en">
 
@@ -99,4 +102,56 @@
 </body>
 
 
+</html>
+
+-->
+<html>
+
+
+
+{% block script %}
+<script>
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                
+                document.getElementById("header").style.fontSize = "25px";
+                document.getElementById("header").innerHTML = "Tech Snippets - Blog for Technophile"
+                document.getElementById("header").style.textAlign = "left";
+                
+                document.getElementById("header").style.backgroundColor = "#FF331F";
+                document.getElementById("header").style.visibility = "visible";
+
+            } else {
+                document.getElementById("header").style.visibility = "hidden";
+            }
+        }
+        //document.getElementById("body").style.backgroundSize = "$(window).height() $(window).weight()";
+</script>
+
+{% endblock %}
+
+{% block body %}
+<div class="word"></div>
+
+<style>
+    body{
+        background-image: url("{% static 'images/tech.jpg' %}");
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat; 
+    }
+    #header{
+        background-color: black;
+        visibility: hidden;
+    }
+    .word{
+        text-align: center;
+        color: black;
+        font-weight: bolder;
+    }
+</style>
+{% endblock %}
 </html>

@@ -23,7 +23,7 @@
 <body>
     <!-- hi there this is a comment -->
     <div id="header">
-        <p>Tech Snippets</p>
+        <!-- <p>Tech Snippets</p> -->
     </div>
     <div class=" blog" style="margin-top:200px;padding:15px 15px 2500px;font-size:30px; overflow: 
             hidden;">
@@ -34,7 +34,7 @@
     <script>
         // When the user scrolls down 50px from the top of the document, resize the header's font size
 
-
+        
 
         window.onscroll = function () {
             scrollFunction()
@@ -45,14 +45,14 @@
                 document.getElementById("header").style.fontSize = "25px";
                 document.getElementById("header").innerHTML = "Tech Snippets - Blog for Technophile"
                 document.getElementById("header").style.textAlign = "left";
-
+                //document.getElementById("header").style.backgroundColor = "#FF331F";
 
             } else {
 
                 document.getElementById("header").style.fontSize = "60px";
                 document.getElementById("header").style.textAlign = "center";
-                document.getElementById("header").innerHTML = "Tech Snippets"
-
+                document.getElementById("header").innerHTML = "Tech Snippets";
+                //document.getElementById("header").style.backgroundColor = "black";
             }
         }
 
@@ -114,6 +114,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
+        {% block script %}
+        {% endblock %}
 
 
 </body>
