@@ -25,7 +25,7 @@ SECRET_KEY = 'rt=_b%c25^_kmna*j331e7d3oayk&)t9%u@=6m3*3&#&5iw$t!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['techsnippet.pythonanywhere.com']
+ALLOWED_HOSTS = ['techsnippet.pythonanywhere.com', '127.0.0.1']
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
@@ -86,11 +86,11 @@ WSGI_APPLICATION = 'TechSnippets.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'techsnippet$techsnippets',
-        'USER': 'techsnippet',
-        'PASSWORD': 'akilhari187',
-        'HOST': 'techsnippet.mysql.pythonanywhere-services.com',   
-        'PORT': '',
+        'NAME': 'techsnippets',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',   
+        'PORT': '3306',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
         },
